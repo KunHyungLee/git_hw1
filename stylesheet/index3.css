@@ -1,0 +1,49 @@
+#body b {
+	background-color: #666;
+	color: #F0F0F0;
+	padding: 5px 122px 5px 122px;
+	text-align: center;
+}
+
+#Question {
+	position: fixed;
+	margin-top: 10px;
+	float: left;
+}
+
+#Question_Text {
+	position: fixed;
+	width: 60px;
+	line-height: 22px;
+}
+
+#Question_Field {
+	position: fixed;
+	margin-left: 70px;
+	line-height: 22px;
+}
+
+#Question_Field input {
+	width: 225px;
+}
+
+#Question_Field input.number {
+	width: 65px;
+}
+
+#Question_Field input.radio {
+	width: 20px;
+}
+
+#Question_Field select {
+	width: 225px;
+}
+
+#Question_Field select.number {
+	width: 65px;
+}
+
+#Question_Field textarea {
+	width: 225px;
+	height: 100px;
+}

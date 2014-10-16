@@ -1,7 +1,7 @@
 #body b {
 	background-color: #666;
 	color: #F0F0F0;
-	padding: 5px 180px 5px 180px;
+	padding: 5px 181px 5px 181px;
 	text-align: center;
 }
 
@@ -14,7 +14,6 @@
 	position: fixed;
 	width: 250px;
 	margin: 10px 0 0 150px;
-	font-family: 'Nanum Gothic';
 }
 
 #right a:link, a:visited {
@@ -38,9 +37,9 @@
 }
 
 #right ul li:hover {
-	background-color: #e5e5e5;
+	background-color: #ccc;
 }
 
-#right ul ol {
+#right ol {
 	text-indent: 50px;
 }

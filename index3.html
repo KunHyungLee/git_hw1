@@ -1,102 +1,122 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>설문조사</title>
+	<title>Question</title>
+	<link rel="stylesheet" href="./stylesheet/main.css" type="text/css">
+	<link rel="stylesheet" href="./stylesheet/index3.css" type="text/css">
+	<link rel="stylesheet" href="./stylesheet/reset.css" type="text/css">
+	<link rel="stylesheet" href="./stylesheet/nanumgothic.css" type="text/css">
 </head>
 <body>
-	<b><a href="./index.html">Main</a></b>
-	<b><a href="./index2.html">경력</a></b>
-	<h3>설문 조사</h3>
-		<form action="./update.php" method="post">
-			이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 
-			<input type="text" size=20 maxlength=10 name="name"><br/>
-			학&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;번 
-			<input type="text" size=20 maxlength=10 name="student_number"><br/>
-			나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이 
-			<input type="text" size=20 maxlength=10 name="age"><br/>
-			학&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;과 
-				<select name="major">
-					<option value=" ">select</option>
-					<option value=" ">-------자연과학대학-------</option>
-					<option value="001">수학과</option>
-					<option value="002">물리학과</option>
-					<option value="003">화학과</option>
-					<option value="004">식품영역학과</option>
-					<option value="005">생명과학정보학부</option>
-					<option value=" ">--------공과대학--------</option>
-					<option value="006">전기공학과</option>
-					<option value="007">전자공학과</option>
-					<option value="008">정보통신공학과</option>
-					<option value="009">화학공학과</option>
-					<option value="010">신소재공학과</option>
-					<option value="011">환경에너지공학과</option>
-					<option value="012">컴퓨터공학과</option>
-					<option value="013">토목환경공학과</option>
-					<option value="014">교통공학과</option>
-					<option value="015">기계공학과</option>
-					<option value="016">산업경영공학과</option>
-					<option value=" ">-------예술체육대학------</option>
-					<option value="017">디자인학부</option>
-					<option value="018">체육학부</option>
-					<option value="019">음악학부</option>
-					<option value="020">바둑학과</option>
-					<option value="021">영화 뮤직컬학부</option>
-					<option value=" ">--------건축대학--------</option>
-					<option value="022">건축학부</option>
-					<option value="023">공간디자인학과</option>
-					<option value=" ">-----방목기초교육대학-----</option>
-					<option value="024">전공자유학부</option>
-				</select>
-				<br/>
-			성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 
-				<input type="radio" name="sex" value="man" checked>남자
-				<input type="radio" name="sex" value="woman">여자<br/>
-			집&nbsp;&nbsp;&nbsp;&nbsp;전화 
-				<select name="home_phone1">
-					<option value=" ">select</option>
-					<option value="02">02</option>
-					<option value="051">051</option>
-					<option value="053">053</option>
-					<option value="032">032</option>
-					<option value="062">062</option>
-					<option value="042">042</option>
-					<option value="052">052</option>
-					<option value="044">044</option>
-					<option value="031">031</option>
-					<option value="033">033</option>
-					<option value="043">043</option>
-					<option value="041">041</option>
-					<option value="063">063</option>
-					<option value="061">061</option>
-					<option value="054">054</option>
-					<option value="055">055</option>
-					<option value="064">064</option>
-				</select>
-				-
-				<input type="text" size=4 name="home_phone2" maxlength=4>
-				-
-				<input type="text" size=4 name="home_phone3" maxlength=4><br/>
-			휴대 전화 
-				<select name="cell_phone1">
-					<option value=" ">select</option>
-					<option value="010">010</option>
-					<option value="011">011</option>
-					<option value="016">016</option>
-					<option value="017">017</option>
-					<option value="018">018</option>
-					<option value="019">019</option>
-				</select>
-				-
-				<input type="text" size=4 name="cell_phone2" maxlength=4>
-				-
-				<input type="text" size=4 name="cell_phone3" maxlength=4><br/>
-			주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소 
-			<input type="text" size=40 name="address"><br/>
-			E - Mail 
-			<input type="text" size=40 name="email"><br/>
-			소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개<br/>
-    		<textarea cols="45" rows="10" name="intro"></textarea><br/>
-    		<input type="submit">
-		</form>
+	<div id="wrap">
+		<div id="header">
+			<div id="menu">
+				<a href="./index.html" title="Home">Home</a>
+				<a href="./index2.html" title="Career">Career</a>
+				<a href="./index3.html" title="Question">Question</a><br/>
+			</div>
+		</div>
+
+		<div id="body">
+			<b>Question</b>
+			<div id="Question">
+				<form action="./update.php" method="post">
+					<div id="Question_Text">
+						이름<br/>
+						학번<br/>
+						나이<br/>
+						학과<br/>
+						성별<br/>
+						집 전화<br/>
+						휴대 전화<br/>
+						주소<br/>
+						E - Mail<br/>
+						소개<br/>
+					</div>
+
+					<div id="Question_Field">
+						<input type="text" maxlength=10 name="name"><br/>
+						<input type="text" maxlength=10 name="student_number"><br/>
+						<input type="text" maxlength=10 name="age"><br/>
+						<select name="major">
+							<option value=" ">select</option>
+							<option value=" ">-------자연과학대학-------</option>
+							<option value="001">수학과</option>
+							<option value="002">물리학과</option>
+							<option value="003">화학과</option>
+							<option value="004">식품영역학과</option>
+							<option value="005">생명과학정보학부</option>
+							<option value=" ">--------공과대학--------</option>
+							<option value="006">전기공학과</option>
+							<option value="007">전자공학과</option>
+							<option value="008">정보통신공학과</option>
+							<option value="009">화학공학과</option>
+							<option value="010">신소재공학과</option>
+							<option value="011">환경에너지공학과</option>
+							<option value="012">컴퓨터공학과</option>
+							<option value="013">토목환경공학과</option>
+							<option value="014">교통공학과</option>
+							<option value="015">기계공학과</option>
+							<option value="016">산업경영공학과</option>
+							<option value=" ">-------예술체육대학------</option>
+							<option value="017">디자인학부</option>
+							<option value="018">체육학부</option>
+							<option value="019">음악학부</option>
+							<option value="020">바둑학과</option>
+							<option value="021">영화 뮤직컬학부</option>
+							<option value=" ">--------건축대학--------</option>
+							<option value="022">건축학부</option>
+							<option value="023">공간디자인학과</option>
+							<option value=" ">-----방목기초교육대학-----</option>
+							<option value="024">전공자유학부</option>
+						</select><br/>
+						<input type="radio" class="radio" name="sex" value="man" checked>남자
+						<input type="radio" class="radio" name="sex" value="woman">여자<br/>
+						<select name="home_phone1" class="number">
+							<option value=" ">select</option>
+							<option value="02">02</option>
+							<option value="051">051</option>
+							<option value="053">053</option>
+							<option value="032">032</option>
+							<option value="062">062</option>
+							<option value="042">042</option>
+							<option value="052">052</option>
+							<option value="044">044</option>
+							<option value="031">031</option>
+							<option value="033">033</option>
+							<option value="043">043</option>
+							<option value="041">041</option>
+							<option value="063">063</option>
+							<option value="061">061</option>
+							<option value="054">054</option>
+							<option value="055">055</option>
+							<option value="064">064</option>
+						</select>
+						-
+						<input type="text" name="home_phone2" maxlength=4 class="number">
+						-
+						<input type="text" name="home_phone3" maxlength=4 class="number"><br/>
+						<select name="cell_phone1" class="number">
+							<option value=" ">select</option>
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="016">016</option>
+							<option value="017">017</option>
+							<option value="018">018</option>
+							<option value="019">019</option>
+						</select>
+						-
+						<input type="text" name="cell_phone2" maxlength=4 class="number">
+						-
+						<input type="text" name="cell_phone3" maxlength=4 class="number"><br/>
+						<input type="text" name="address"><br/>
+						<input type="text" name="email"><br/>
+						<textarea name="intro"></textarea><br/>
+						<input type="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>	
 </html>

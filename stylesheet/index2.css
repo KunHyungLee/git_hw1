@@ -1,13 +1,12 @@
 #body b {
 	background-color: #666;
 	color: #F0F0F0;
-	padding: 5px 434px 5px 434px;
+	padding: 5px 428px 5px 428px;
 	text-align: center;
 }
 
 table {
 	margin-top: 10px;
-	font-family: 'Nanum Gothic';
 	letter-spacing:-0.05em;
 	border-top:3px solid #37315d;
 	border-bottom:2px solid #ccc;
@@ -23,7 +22,7 @@ tr:hover {
 }
 
 th, td {
-		padding: 100px 0;
+	padding: 100px 0;
 
 	border-top:1px solid #e2e2e2;
 	border-left:1px solid #e2e2e2;
