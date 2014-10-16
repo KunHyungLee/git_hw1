@@ -1,70 +1,46 @@
-html {
-	color: #000;
-	background-color: #FFF;
-	padding: 20px 0;
-	font: 12px/18px "맑은 고딕", "Malgun Gothic", "굴림", "Gulim";
-}
-
-#wrap {
-	width: 400px;
-	margin-left: 15px;
-	background-color: #FFF;
-}
-
-#top {
+#body b {
+	background-color: #666;
+	color: #F0F0F0;
+	padding: 5px 180px 5px 180px;
 	text-align: center;
 }
 
-#top a:link, a:visited {
-	color: #000;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-#top a:hover, a:active {
-	color: red;
-}
-
 #left {
-	float: left;
-	min-height: 150px;
-	margin: 10px;
+	position: fixed;
+	margin-top: 10px;
 }
 
-#right_top {
+#right {
+	position: fixed;
 	width: 250px;
 	margin: 10px 0 0 150px;
+	font-family: 'Nanum Gothic';
 }
 
-#right_top a:link, a:visited {
+#right a:link, a:visited {
 	color: #000;
 	text-decoration: none;
 }
 
-#right_top a:hover, a:active {
+#right a:hover, a:active {
 	color: blue;
 }
 
-#right_top ul {
+#right ul {
 	list-style: none; 
 	padding:0;
 	margin:0;
 }
 
-#right_top ul li {
+#right ul li {
 	list-style: none; 
 	border-bottom: 1px solid #000;
 }
 
-#right_top ul li:hover {
+#right ul li:hover {
 	background-color: #e5e5e5;
 }
 
-#right_top ul ol {
+#right ul ol {
 	text-indent: 50px;
-}
-
-span.gray {
-	color: #888;
-	margin: 0 5px 0 0;
 }
